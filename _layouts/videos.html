@@ -4,7 +4,21 @@ layout: videos
 
 
 <h1> {{site.videos.title}} </h1>
+
+
 {% include header.html %}
+     <link href="../../../assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="../../../assets/css/blog.css">
+   </div>
+  </div>
+</header>
+
+
+
+
+
 
 
 {% for videos in site.videos %}
@@ -12,3 +26,5 @@ layout: videos
   <p>{{ videos.description }}</p>
   <p><a href="{{ videos.url }}">{{ videos.title }}</a></p>
 {% endfor %}
+
+{% include footer.html %}

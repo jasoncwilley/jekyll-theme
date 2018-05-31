@@ -1,0 +1,14 @@
+---
+layout: news
+---
+
+{% include header.html %}
+
+{% for tutorials in site.videos %}
+  <h2>{{ news.title }}</h2>
+  <p>{{ news.description }}</p>
+  <p><a href="{{ news.url }}">{{ news.title }}</a></p>
+{% endfor %}
+
+
+{% include footer.html %}

@@ -1,0 +1,14 @@
+---
+layout: tutorials
+---
+
+{% include header.html %}
+
+{% for tutorials in site.videos %}
+  <h2>{{ tutorials.title }}</h2>
+  <p>{{ tutorials.description }}</p>
+  <p><a href="{{ tutorials.url }}">{{ tutorials.title }}</a></p>
+{% endfor %}
+
+
+{% include footer.html %}
