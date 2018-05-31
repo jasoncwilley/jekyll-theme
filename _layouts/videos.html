@@ -1,0 +1,14 @@
+---
+layout: videos
+---
+
+
+<h1> {{site.videos.title}} </h1>
+{% include header.html %}
+
+
+{% for videos in site.videos %}
+  <h2>{{ videos.title }}</h2>
+  <p>{{ videos.description }}</p>
+  <p><a href="{{ videos.url }}">{{ videos.title }}</a></p>
+{% endfor %}

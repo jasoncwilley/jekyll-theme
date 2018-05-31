@@ -37,21 +37,22 @@
       </header>
 
 
-    <div class="nav-scroller py-1 mb-2">
-      <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">About</a>
-        <a class="p-2 text-muted" href="#">News/Politics</a>
-        <a class="p-2 text-muted" href="#">Tutorials</a>
-        <a class="p-2 text-muted" href="#">Previous Posts</a>
-        <a class="p-2 text-muted" href="#">Photo Albums</a>
-        <a class="p-2 text-muted" href="#">Random(ness)</a>
-        <a class="p-2 text-muted" href="#">Around the Web</a>
-        <a class="p-2 text-muted" href="#">Videos</a>
-        <a class="p-2 text-muted" href="#">Contact Info</a>
-      </nav>
-    </div>
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <style type="text/css" black-background {background-color:#000000; white {color:#ffffff}></style>
+          <a class="p-2 text-muted btn btn-primary" href="#">About</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">News/Politics</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Tutorials</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Previous Posts</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Photo Albums</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Random(ness)</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Around the Web</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Videos</a>
+          <a class="p-2 text-muted btn btn-primary" href="#">Contact Info</a>
+        </nav>
+      </div>
 
-    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="jumbotron p-3 p-md-5" <style="rounded background-color: #686c72"></style>>
        <div class="col-md-12 px-0">
          <h2 class="font-italic"> {{site.posts.last.title}}</h2>
          <p class="lead my-3">  {{site.posts.last.excerpt}}</p>
@@ -64,13 +65,13 @@
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250 bg-light">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-primary">Ti</strong>
+            <strong class="d-inline-block mb-2 text-primary">Vidoes</strong>
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Featured post</a>
+              <a class="text-dark" href="#">Featured Video</a>
             </h3>
 
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
+            <p class="card-text mb-auto">{{site.videos.first.title}}</p>
+            <a href="#">{{site.videos.first.description}}</a>
           </div>
           <img class="card-img-right flex-auto d-none d-lg-block" <img src="images/hyperhex.jpg" data-src="images/hyperhex.jpg" alt=height="200" width="200">
         </div>
@@ -95,40 +96,16 @@
         <div class="row">
           <div class="col-md-8 blog-main">
             <h3 class="pb-3 mb-4 font-italic border-bottom">
-              From the Firehose
+              From the Wheel House
             </h3>
 
             <div class="blog-post">
-              <h2 class="blog-post-title">Sample blog post</h2>
-              <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+              <h2 class="blog-post-title">{{site.posts.first.title}}</h2>
+              <a class="blog-post-meta">{{site.posts.first.date | date: "%B %d, %Y"}}</a>
+              <a>By {{site.posts.first.author}}</a>
 
-              <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-              <hr>
-              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-              <blockquote>
-                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </blockquote>
-              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-              <h2>Heading</h2>
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              <h3>Sub-heading</h3>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <pre><code>Example code block</code></pre>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-              <h3>Sub-heading</h3>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <ul>
-                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                <li>Nulla vitae elit libero, a pharetra augue.</li>
-              </ul>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-              <ol>
-                <li>Vestibulum id ligula porta felis euismod semper.</li>
-                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-              </ol>
-              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+              <p>{{site.posts.first.content}}</p>
             </div><!-- /.blog-post -->
 
             <nav class="blog-pagination">

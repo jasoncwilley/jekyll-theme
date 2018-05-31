@@ -6,6 +6,7 @@ tags: [conky, themes, examples, scripts, install, configuration]
 comments: true
 image:
   background: hexagon.jpg
+author: "Jason C. Willey"
 ---
 
 
