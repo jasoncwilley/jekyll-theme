@@ -30,6 +30,20 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
+  tutorials:
+    output: true
+    permalink: /tutorials/:path/
+  videos:
+    output: true
+    permalink: /videos/:path/
+  photos:
+    output: true
+    permalink: /photos/:path/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
