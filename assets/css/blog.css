@@ -1,0 +1,17 @@
+.nav-scroller {
+  padding-top: 10px;
+   text-decoration-color: black;
+   font-size: 18px;
+  background-image: image("/images/hexagon.jpg");
+}
+
+.blog-header-logo {
+  font-size: 25px;
+  color: black
+}
+
+.blog-footer {
+
+  padding-top: 10px;
+  text-align: center;
+}
